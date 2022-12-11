@@ -16,10 +16,20 @@
  * along with JetBrains-DiscordRichPresence.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.github.teamhartex.jetbrainsplugins.discordrichpresence;
+#ifndef NATIVE_FUNCTIONS_H
+#define NATIVE_FUNCTIONS_H
 
-import com.intellij.openapi.diagnostic.Logger;
+#include <jni.h>
+#include <string>
 
-public final class Plugin {
-    public static final Logger LOGGER = Logger.getInstance("DiscordRichPresence");
-}
+template<int LENGTH>
+void
+CreateNativeString(JNIEnv& jniEnv, jbyteArray bytes, char target[LENGTH]);
+
+std::string
+CreateNativeString(JNIEnv& jniEnv, jbyteArray bytes);
+
+jbyteArray
+CreateJavaString(JNIEnv& jniEnv, const char* string);
+
+#endif
