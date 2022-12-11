@@ -1,0 +1,20 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <id>com.github.teamhartex.jetbrainsplugins.discordrichpresence</id>
+
+    <name>Discord Rich Presence</name>
+
+    <vendor url="https://github.com/TeamHarTex">Team HarTex</vendor>
+    
+    <idea-version since-build="223"/>
+
+    <description>
+        Discord Rich Presence plugin for IntelliJ IDEs.
+    </description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+
+    </extensions>
+</idea-plugin>
