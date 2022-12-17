@@ -1,6 +1,6 @@
 plugins {
   id("java")
-  id("org.jetbrains.intellij") version "1.10.2"
+  id("org.jetbrains.intellij") version "1.11.0"
 }
 
 group = "com.github.teamhartex.jetbrainsplugins.discordrichpresence"
